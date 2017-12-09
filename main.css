@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|Devonshire');
+
+
+/*---Core Styles---*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	background: rgba(255,255,255,1);
+	color: rgba(0,0,0,0.8);
+	font: 100% 'Dosis', sans-serif;
+	text-align: center;
+	line-height: 1.5;
+    text-rendering: optimizeLegibility;
+}
+
+a {
+	text-decoration: none;
+	color: rgba(0,0,0,0.8);
+}
+
+a:hover {
+	color: rgba(0,0,0,0.5);
+}
+
+ol, ul {
+	list-style: none;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+
+/*---Header---*/
+header {
+	background: rgba(64,64,64,1);
+	color: rgba(255,255,255,1);
+}
+
+h1 a, h1 a:hover {
+	color: rgba(0,255,255,1);
+	font: 125% 'Devonshire', sans-serif;
+}
+
+nav li a{
+	color: rgba(255,255,255,1);
+}
+
+nav li a:hover{
+	color: rgba(255,255,255,0.9);
+}
+
+nav {
+	display: none;
+	width: 100%;
+}
+
+nav li {
+	display: block;
+	padding: 5%;
+	font-size: 150%;
+	font-weight: bold;
+	transition: all 0.2s;
+}
+
+.open-nav {
+	display: block;
+}
+
+
+/*---Main---*/
+.wrapper {
+	padding: 5%;
+}
+
+#portfolio {
+	background: rgba(128,128,128,0.1);
+}
+.gallery {
+	display: grid;
+}
+.gallery > * {
+	padding: 2%;
+	margin: 5%;
+	border: 1px solid rgba(0,0,0,0.3);
+}
+
+
+/*---Media Queries---*/
+@media only screen and (min-width: 768px) {
+	body {
+		font-size: 150%;
+	}
+
+	header {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr); 
+		position: fixed;
+		width: 100%;
+	}
+
+	#nav-icon {
+		display: none;
+	}
+
+	nav {
+		display: inline;
+		font-size: 75%;
+		padding: 1%;
+	}
+
+	nav li {
+		display: inline;
+	}
+
+	#about {
+		display: grid;
+		grid-template-columns: 3fr 2fr; 
+		padding: 8% 0 4%;
+	}
+
+	.gallery {
+		grid-template-columns: repeat(3, 1fr); 
+		grid-auto-rows: minmax(50%, auto);
+	}
+}
+
+
+/*
+Removed:
+		grid-template-areas: 
+			"nav nav"
+			"header header"
+			"about skills"
+			"portfolio portfolio"
+			"footer footer";
+
+	header {
+		grid-area: header;
+	}
+	nav {
+		grid-area: nav;
+	}
+	#about {
+		grid-area: about;
+	}
+	#skills {
+		grid-area: skills;
+	}
+	#portfolio {
+		grid-area: portfolio;
+	}
+	footer {
+		grid-area: footer;
+	}
+
+
+
+.grid > div {
+	padding: 5%;
+	margin: 5%;
+	background: rgba(0,0,0,0.05);
+}
+
+.grid > div:nth-child(even) {
+	background: rgba(0,0,0,0.1);
+}
+*/
+
+
+/*
+CSS Grid Notes:
+Exclude "defaults" from media query (ie, display: grid and maybe even grid-template-rows)
+Using fractionals(fr) is better than using percentages(%)
+For gap, can use grid-gap: 1% ; OR grid-column-gap: 1%; grid-row-gap: 1%;
+
+
+CSS Grid References:
+YouTube Traversy Media "CSS Grid Layout Crash Course"
+YouTube Traversy Media "Grid CSS Responsive Website Layout"
+YouTube Coding Tech "CSS Grid Changes EVERYTHING"
+https://medium.com/flexbox-and-grids/how-to-efficiently-master-the-css-grid-in-a-jiffy-585d0c213577
+https://gridbyexample.com/
+*/

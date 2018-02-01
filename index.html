@@ -2,12 +2,36 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="icon" type="image/png" href="favicon.png">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
   <title>Tiffany Chen</title>
+  <link rel="canonical" href="http://tiffanychen.me" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <style type="text/css">
+    *{margin:0;padding:0;box-sizing:border-box}body{background:rgba(255,255,255,1);color:rgba(0,0,0,0.8);font:100% 'Dosis',sans-serif;text-align:center;line-height:1.5;text-rendering:optimizeLegibility}a{text-decoration:none;color:rgba(0,0,0,0.8)}ul{list-style:none}header{background:rgba(64,64,64,1);color:rgba(255,255,255,1);z-index:100}h1 a{color:rgba(0,255,255,1);font:125% 'Devonshire',sans-serif}nav li a{color:rgba(255,255,255,1)}nav{display:none;width:100%}nav li{display:block;padding:5%;font-size:150%;font-weight:bold}.wrapper{padding:5%}#about{height:100vh}@media only screen and (min-width:480px){body{font-size:125%}}@media only screen and (min-width:768px){body{font-size:150%}header{display:grid;grid-template-columns:repeat(2,1fr);position:fixed;width:100%}#nav-icon{display:none}nav{display:inline;font-size:75%;padding:1%}nav li{display:inline}#about{display:grid;grid-template-columns:3fr 2fr;padding:10% 0 2%}}@media only screen and (min-width:1280px){body{font-size:200%}}
+  </style>
+  <script src="main.js" async defer></script>
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Tiffany Chen",
+      "description": "front-end web developer with a mobile-first approach to responsive web design",
+      "url": "http://tiffanychen.me/",
+      "sameAs": [
+        "https://www.linkedin.com/in/chen-tiffany",
+        "https://github.com/tiffanymakes"
+      ],
+      "alumniOf": {
+         "@type": "OrganizationRole",
+         "alumniOf": {
+           "@type": "CollegeOrUniversity",
+           "name": "Lehigh University",
+           "sameAs": "https://www1.lehigh.edu/"
+         }
+       }
+    }
+  </script>
 </head>
 
 <body>
@@ -27,27 +51,23 @@
 
   <!-- Main Area -->
   <main>
-    <section itemscope itemtype="http://schema.org/Person" id="about">
+    <section id="about">
       <section id="about-me" class="wrapper">
           <h2>About Me</h2>
           <p>
-            Hi, I'm <span itemprop="name">Tiffany Chen</span>! I'm a <span itemprop="jobTitle">front-end web developer</span> in New York City.
+            Hi, I'm Tiffany! I'm a front-end web developer in New York City.
           </p>
           <p>
-            I studied materials science and engineering at
-            <span itemprop="alumniOf" itemscope itemtype="http://schema.org/OrganizationRole">
-              <span itemprop="alumniOf" itemscope itemtype="http://schema.org/CollegeOrUniversity">
-                <span itemprop="name">Lehigh University</span></span></span>, and have experience in development operations and business development.
+            I create responsive websites following a mobile-first approach, and using HTML5 semantic elements and CSS Grid Layout.
           </p>
 
-            <link itemprop="url" href="http://tiffanychen.me">
-            <a itemprop="sameAs" href="https://www.linkedin.com/in/chen-tiffany" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/chen-tiffany" target="_blank" rel="noopener noreferrer">
               <span class="fa-stack fa-2x">
                 <i class="fa fa-linkedin-square" aria-hidden="true"></i>
               </span>
             </a>
 
-            <a itemprop="sameAs" href="https://github.com/tiffanymakes" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/tiffanymakes" target="_blank" rel="noopener noreferrer">
               <span class="fa-stack fa-2x">
                 <i class="fa fa-github-square" aria-hidden="true"></i>
               </span>
@@ -69,39 +89,51 @@
     <section id="portfolio" class="wrapper">
       <h2>Portfolio</h2>
         <div class="gallery">
-          <a href="https://codepen.io/tiffanymakes/full/WRegow/" target="_blank" rel="noopener noreferrer">
-          Random Quote Machine
-          <img src="https://s3-us-west-2.amazonaws.com/i.cdpn.io/966326.WRegow.8d623d95-872c-4a3a-84d2-98d0784f61b2.png"></a>
-
-          <a href="https://codepen.io/tiffanymakes/full/VPvvgm/" target="_blank" rel="noopener noreferrer">
-          Local Weather App
-          <img src="https://s3-us-west-2.amazonaws.com/i.cdpn.io/966326.VPvvgm.782882c1-a188-4416-b6b5-59f7cd930abf.png">
-          </a>
-
-          <a href="https://codepen.io/tiffanymakes/full/egzmdP/" target="_blank" rel="noopener noreferrer">
-            Wikipedia Viewer
-            <img src="https://s3-us-west-2.amazonaws.com/i.cdpn.io/966326.egzmdP.480151f9-0afb-472d-8eae-d78eb3e32430.png">
-          </a>
-
-          <a href="https://codepen.io/tiffanymakes/full/egBKqO/" target="_blank" rel="noopener noreferrer">
-            TwitchTV Streamers List
-            <img src="https://s3-us-west-2.amazonaws.com/i.cdpn.io/966326.egBKqO.3aa8c006-8872-46f1-b606-ab59b433c186.png">
-          </a>
-
-          <a href="https://codepen.io/tiffanymakes/full/OpQroQ/" target="_blank" rel="noopener noreferrer">
-            Javascript Calculator
-            <img src="https://cdn.pixabay.com/photo/2017/06/16/07/26/under-construction-2408062_960_720.png">
-          </a>
 
           <a href="https://codepen.io/tiffanymakes/full/ZaqROL/" target="_blank" rel="noopener noreferrer">
             Pomodoro Clock
-            <img src="https://cdn.pixabay.com/photo/2017/06/16/07/26/under-construction-2408062_960_720.png">
+            <img src="images/pomodoro-clock.jpg">
           </a>
 
           <a href="https://codepen.io/tiffanymakes/full/MOPXjb/" target="_blank" rel="noopener noreferrer">
             Tic Tac Toe Game
-            <img src="https://cdn.pixabay.com/photo/2017/06/16/07/26/under-construction-2408062_960_720.png">
+            <img src="images/tic-tac-toe.jpg">
           </a>
+
+          <a href="https://codepen.io/tiffanymakes/full/MOPXjb/" target="_blank" rel="noopener noreferrer">
+            Simon Game
+            <img src="images/simon-game.jpg">
+          </a>
+
+          <a href="https://codepen.io/tiffanymakes/full/OpQroQ/" target="_blank" rel="noopener noreferrer">
+            Javascript Calculator
+            <img src="images/javascript-calculator.jpg">
+          </a>
+
+          <a href="https://codepen.io/tiffanymakes/full/goOyje/" target="_blank" rel="noopener noreferrer">
+            Responsive Recipe Box
+            <img src="images/recipe-box.jpg">
+          </a>
+
+          <a href="https://codepen.io/tiffanymakes/full/VPvvgm/" target="_blank" rel="noopener noreferrer">
+          Local Weather App
+          <img src="images/local-weather.jpg">
+          </a>
+
+          <a href="https://codepen.io/tiffanymakes/full/egzmdP/" target="_blank" rel="noopener noreferrer">
+            Wikipedia Viewer
+            <img src="images/wikipedia-viewer.jpg">
+          </a>
+
+          <a href="https://codepen.io/tiffanymakes/full/egBKqO/" target="_blank" rel="noopener noreferrer">
+            TwitchTV Streamers List
+            <img src="images/twitchtv-list.jpg">
+          </a>
+
+          <a href="https://codepen.io/tiffanymakes/full/WRegow/" target="_blank" rel="noopener noreferrer">
+          Random Quote Machine
+          <img src="images/random-quote.jpg"></a>
+
         </div>
      
     </section>
@@ -114,7 +146,10 @@
       <span>Tiffany Chen. All rights reserved.</span>
   </footer>
 
-  <script src="main.js"></script>
+  <link rel="preload" href="main.css" as="style">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" as="font" />
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
 </body>
 

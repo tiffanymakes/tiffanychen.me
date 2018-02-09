@@ -3,12 +3,13 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
   <title>Tiffany Chen</title>
+  <meta name="description" content="Tiffany Chen is a front-end developer who uses a mobile-first approach to responsive web design. She specializes in human-computer interaction and her skills include Javascript, HMTL5, and CSS3." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
   <link rel="canonical" href="http://tiffanychen.me" />
   <link rel="icon" type="image/png" href="images/favicon.png" />
   <style type="text/css">
-    *{margin:0;padding:0;box-sizing:border-box}body{background:rgba(255,255,255,1);color:rgba(0,0,0,0.8);font:100% 'Dosis',sans-serif;text-align:center;line-height:1.5;text-rendering:optimizeLegibility}a{text-decoration:none;color:rgba(0,0,0,0.8)}ul{list-style:none}header{background:rgba(64,64,64,1);color:rgba(255,255,255,1);z-index:100}h1 a{color:rgba(0,255,255,1);font:125% 'Devonshire',sans-serif}nav li a{color:rgba(255,255,255,1)}nav{display:none;width:100%}nav li{display:block;padding:5%;font-size:150%;font-weight:bold}.wrapper{padding:5%}#about{height:100vh}@media only screen and (min-width:480px){body{font-size:125%}}@media only screen and (min-width:768px){body{font-size:150%}header{display:grid;grid-template-columns:repeat(2,1fr);position:fixed;width:100%}#nav-icon{display:none}nav{display:inline;font-size:75%;padding:1%}nav li{display:inline}#about{display:grid;grid-template-columns:3fr 2fr;padding:10% 0 2%}}@media only screen and (min-width:1280px){body{font-size:200%}}
+    *{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}body{background:rgba(255,255,255,1);color:rgba(0,0,0,0.8);font:100% 'Dosis',sans-serif;text-align:center;line-height:1.5;text-rendering:optimizeLegibility}a{text-decoration:none;color:rgba(0,0,0,0.8)}ul{list-style:none}header{background:rgba(64,64,64,1);color:rgba(255,255,255,1);font-size:75%;z-index:100}nav{display:none;width:100%}nav li{display:block;padding:5%;font-size:150%;font-weight:bold}h1 a{color:rgba(100,149,237,1);font:100% 'Pacifico',cursive}nav li a{color:rgba(255,255,255,1)}#scroll-button{display:none;position:fixed;bottom:2%;right:2%;z-index:99;background:rgba(0,0,0,0.5);color:rgba(255,255,255,1);padding:10px;border-radius:10px}.wrapper{padding:5%}#about{height:100vh}@media only screen and (min-width:480px){body{font-size:125%}}@media only screen and (min-width:768px){body{font-size:150%}header{display:grid;grid-template-columns:repeat(2,1fr);position:fixed;width:100%}#nav-button{display:none}nav{display:inline;font-size:75%;padding:1%}nav li{display:inline}#about{display:grid;grid-template-columns:3fr 2fr;padding:10% 0 2%}}@media only screen and (min-width:1280px){body{font-size:200%}}
   </style>
   <script src="main.js" async defer></script>
   <script type="application/ld+json">
@@ -16,11 +17,12 @@
       "@context": "http://schema.org",
       "@type": "Person",
       "name": "Tiffany Chen",
-      "description": "front-end web developer with a mobile-first approach to responsive web design",
+      "description": "Tiffany Chen is a front-end developer who uses a mobile-first approach to responsive web design. She specializes in human-computer interaction and her skills include Javascript, HMTL5, and CSS3.",
       "url": "http://tiffanychen.me/",
       "sameAs": [
         "https://www.linkedin.com/in/chen-tiffany",
-        "https://github.com/tiffanymakes"
+        "https://github.com/tiffanymakes",
+        "https://codepen.io/tiffanymakes"
       ],
       "alumniOf": {
          "@type": "OrganizationRole",
@@ -39,26 +41,27 @@
   <!-- Header and Navigation -->
   <header>
     <h1><a href="">Tiffany Chen</a></h1>
-    <i id="nav-icon" class="fa fa-bars fa-2x" aria-hidden="true"></i>
-      <nav id="nav" class="close-nav">
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-    </ul>
-  </nav>
+    <i id="nav-button" class="fa fa-bars fa-2x" aria-hidden="true"></i>
+    <nav id="nav">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+      </ul>
+    </nav>
   </header>
 
 
   <!-- Main Area -->
   <main>
+    <i id="scroll-button" class="fa fa-arrow-up"></i>
     <section id="about">
       <section id="about-me" class="wrapper">
           <h2>About Me</h2>
           <p>
-            Hi, I'm Tiffany! I'm a front-end web developer in New York City.
+            Hi, I'm Tiffany! I'm a front-end developer in New York City with a specialty in human-computer interaction.
           </p>
           <p>
-            I create responsive websites following a mobile-first approach, and using HTML5 semantic elements and CSS Grid Layout.
+            I create responsive websites following a mobile-first approach, and use HTML5 semantic markup and CSS Grid Layout.
           </p>
 
             <a href="https://www.linkedin.com/in/chen-tiffany" target="_blank" rel="noopener noreferrer">
@@ -100,7 +103,7 @@
             <img src="images/tic-tac-toe.jpg">
           </a>
 
-          <a href="https://codepen.io/tiffanymakes/full/MOPXjb/" target="_blank" rel="noopener noreferrer">
+          <a href="https://codepen.io/tiffanymakes/full/KZZEMe/" target="_blank" rel="noopener noreferrer">
             Simon Game
             <img src="images/simon-game.jpg">
           </a>
@@ -135,7 +138,6 @@
           <img src="images/random-quote.jpg"></a>
 
         </div>
-     
     </section>
   </main>
 
@@ -150,7 +152,6 @@
   <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" as="font" />
   <link rel="stylesheet" href="main.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-
 </body>
 
 </html>

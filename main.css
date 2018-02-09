@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Dosis|Devonshire');
+@import url('https://fonts.googleapis.com/css?family=Dosis|Pacifico');
 
 /*---Core Styles---*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -40,20 +41,8 @@ img {
 header {
 	background: rgba(64,64,64,1);
 	color: rgba(255,255,255,1);
+	font-size: 75%;
 	z-index: 100;
-}
-
-h1 a, h1 a:hover {
-	color: rgba(0,255,255,1);
-	font: 125% 'Devonshire', sans-serif;
-}
-
-nav li a{
-	color: rgba(255,255,255,1);
-}
-
-nav li a:hover{
-	color: rgba(255,255,255,0.9);
 }
 
 nav {
@@ -69,12 +58,38 @@ nav li {
 	transition: all 0.2s;
 }
 
+h1 a, h1 a:hover {
+	color: rgba(100,149,237,1);
+	font: 100% 'Pacifico', cursive;
+}
+
+nav li a {
+	color: rgba(255,255,255,1);
+}
+
+nav li a:hover {
+	color: rgba(255,255,255,0.9);
+}
+
 .open-nav {
 	display: block;
 }
 
 
 /*---Main---*/
+#scroll-button {
+  display: none;
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  z-index: 99;
+  background: rgba(0,0,0,0.5);
+  color: rgba(255,255,255,1);
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+}
+
 .wrapper {
 	padding: 5%;
 }
@@ -86,9 +101,11 @@ nav li {
 #portfolio {
 	background: rgba(128,128,128,0.1);
 }
+
 .gallery {
 	display: grid;
 }
+
 .gallery > * {
 	padding: 2%;
 	margin: 5%;
@@ -100,6 +117,7 @@ nav li {
 footer {
 	font-size: 75%;
 }
+
 
 /*---Media Queries---*/
 @media only screen and (min-width: 480px) {
@@ -113,6 +131,7 @@ footer {
 	body {
 		font-size: 150%;
 	}
+
 	header {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr); 
@@ -120,7 +139,7 @@ footer {
 		width: 100%;
 	}
 
-	#nav-icon {
+	#nav-button {
 		display: none;
 	}
 
@@ -139,6 +158,7 @@ footer {
 		grid-template-columns: 3fr 2fr; 
 		padding: 10% 0 2%;
 	}
+
 	.gallery {
 		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
 	}

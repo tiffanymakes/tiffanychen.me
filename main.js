@@ -41,5 +41,6 @@ document.querySelector('#scroll-button').addEventListener('click', toTop);
 document.querySelector('#scroll-button').addEventListener('click', closeNav);
 function toTop() {
   window.scroll(0,0);
+
 }
 
